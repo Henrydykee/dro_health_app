@@ -1,6 +1,7 @@
 import 'package:dro_health_app/models/drug_model.dart';
 import 'package:dro_health_app/screens/detail_screen.dart';
 import 'package:dro_health_app/utils/color.dart';
+import 'package:dro_health_app/widgets/buttom_app_bar.dart';
 import 'package:dro_health_app/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        child: ButtomAppBar(
+          onTap: (){},
+          cartTotal: "10",
+        ),
+        elevation: 0,
+      ),
       appBar: AppBar(
         centerTitle: true,
         title: Text(

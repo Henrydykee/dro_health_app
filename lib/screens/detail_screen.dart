@@ -1,5 +1,6 @@
 import 'package:dro_health_app/models/drug_model.dart';
 import 'package:dro_health_app/utils/color.dart';
+import 'package:dro_health_app/widgets/buttons.dart';
 import 'package:dro_health_app/widgets/product_details.dart';
 import 'package:dro_health_app/widgets/sold_by.dart';
 import 'package:flutter/material.dart';
@@ -164,6 +165,10 @@ class _DetailScreenState extends State<DetailScreen> {
               SizedBox(
                 height: 50,
               ),
+              Button(
+                title: "Add to bag",
+                image: "assets/images/add_bag.png",
+              )
             ],
           ),
         ),
