@@ -12,7 +12,7 @@ class ButtomAppBar extends StatelessWidget {
     return  GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 62,
+        height: 55,
         width: double.infinity,
         decoration: BoxDecoration(
           color: DroColor.DarkPurple,
@@ -37,7 +37,7 @@ class ButtomAppBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 15,left: 25),
+                  padding: const EdgeInsets.only(top: 5,left: 25),
                   child: Row(
                     children: [
                       Image.asset("assets/images/shopping-bag.png",color: Colors.white,height: 20,width: 20 ,),
@@ -49,7 +49,7 @@ class ButtomAppBar extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(right: 25,top: 15,bottom: 5),
+                  padding: const EdgeInsets.only(right: 25,top: 5,bottom: 5),
                   child: CircleAvatar(
                     radius: 17,
                     backgroundColor: Colors.white,

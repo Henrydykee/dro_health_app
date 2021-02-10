@@ -15,23 +15,26 @@ class Button extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 50,
-      width: double.infinity,
-      decoration: BoxDecoration(
-          color: color ?? DroColor.DROPurple,
-        borderRadius: BorderRadius.circular(6)
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(image,color: iconColor ?? Colors.white,height: 35,width:20,),
-          SizedBox(width: 10,),
-          Text(title,style: TextStyle(
-            color: textColor ?? Colors.white,
-            fontSize: 13
-          ),)
-        ],
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        height: 50,
+        width: double.infinity,
+        decoration: BoxDecoration(
+            color: color ?? DroColor.DROPurple,
+          borderRadius: BorderRadius.circular(6)
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(image,color: iconColor ?? Colors.white,height: 35,width:20,),
+            SizedBox(width: 10,),
+            Text(title,style: TextStyle(
+              color: textColor ?? Colors.white,
+              fontSize: 13
+            ),)
+          ],
+        ),
       ),
     );
   }
