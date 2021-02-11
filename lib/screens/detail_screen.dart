@@ -47,7 +47,6 @@ class _DetailScreenState extends State<DetailScreen> {
                           )),
                       Container(
                         height: 35,
-                        width: 50,
                         decoration: BoxDecoration(
                             color: DroColor.DROPurple,
                             borderRadius: BorderRadius.circular(5.0)),

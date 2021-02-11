@@ -30,7 +30,50 @@ void modalBottomSheet(BuildContext context) {
                   Expanded(
                     child: Column(
                       children: [
-                        SizedBox(height: 50,),
+                        SizedBox(height: 8,),
+                        Container(
+                          padding: EdgeInsets.all(0),
+                          height: 5,
+                          width: 50,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(3),
+                              color: Colors.white
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              CircleAvatar(
+                                radius: 17,
+                                backgroundColor: DroColor.DarkPurple,
+                                child: Text("",style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 12
+                                ),),
+                              ),
+                              Row(
+                                children: [
+                                  Image.asset("assets/images/shopping-bag.png",color: Colors.white,height: 20,width: 20 ,),
+                                  SizedBox(width: 5,),
+                                  Text("Bag",style: TextStyle(
+                                      color: Colors.white
+                                  ),)
+                                ],
+                              ),
+                              CircleAvatar(
+                                radius: 17,
+                                backgroundColor: Colors.white,
+                                child: Text(vm.cartItems.length.toString(),style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 12
+                                ),),
+                              )
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 10,),
                         Instruction(),
                         SizedBox(height: 10,),
                         Expanded(
